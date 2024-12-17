@@ -3108,4 +3108,5 @@ span.alert {
 }
 .alert-success{
     background-color: #61d5b6;
+    line-height: normal;
 }
