@@ -84,7 +84,7 @@
                                          <th scope="col">Injured</th>
                                      </tr>
                                  </thead>
-                                 <tbody>
+                                 <tbody class="tbody">
                                  @foreach ($organizedPlayers['Goalkeeper'] as $gk_player)
 
                                      <tr class="matche-main" data-team-id="{{$gk_player->player_team_id}}" data-player-id="{{$gk_player->player_id}}" data-player-role="G" data-player-name="{{$gk_player->name}}" data-team-logo="{{$gk_player->team_logo}}" data-match-id="{{$matchDetails[0]->fixture_id}}" data-team-name="testing" data-home-team="{{ $matchDetails[0]->home_team_id }}" data-away-team="{{ $matchDetails[0]->away_team_id }}" data-slug-matchid="{{ $matchDetails[0]->id }}">
@@ -106,10 +106,10 @@
                                          <td class="credits_points">
                                              <span>{{ ($gk_player->injured == '1') ?
                                                 'Yes' : 'No'}}</span>
-                                             <button class="plus player-toggle">
+                                             <button class="plus player-toggle" data-event="plus">
                                                  <i class="fa-solid fa-plus"></i>
                                              </button>
-                                             <button class="minus player-toggle ">
+                                             <button class="minus player-toggle d-none" data-event="minus">
                                                  <i class="fa-solid fa-minus"></i>
                                              </button>
                                          </td>
@@ -157,10 +157,10 @@
                                          <td class="credits_points">
                                              <span>{{ ($def_player->injured == '1') ?
                                                 'Yes' : 'No'}}</span>
-                                             <button class="plus player-toggle">
+                                             <button class="plus player-toggle" data-event="plus">
                                                  <i class="fa-solid fa-plus"></i>
                                              </button>
-                                             <button class="minus player-toggle ">
+                                             <button class="minus player-toggle d-none" data-event="minus">
                                                  <i class="fa-solid fa-minus"></i>
                                              </button>
                                          </td>
@@ -207,10 +207,10 @@
                                          <td class="credits_points">
                                              <span>{{ ($mid_player->injured  == '1') ?
                                                 'Yes' : 'No'}}</span>
-                                             <button class="plus player-toggle">
+                                             <button class="plus player-toggle" data-event="plus">
                                                  <i class="fa-solid fa-plus"></i>
                                              </button>
-                                             <button class="minus player-toggle ">
+                                             <button class="minus player-toggle d-none" data-event="minus">
                                                  <i class="fa-solid fa-minus"></i>
                                              </button>
                                          </td>
@@ -258,10 +258,10 @@
                                          <td class="credits_points">
                                              <span>{{ ($st_player->injured == '1') ?
                                                 'Yes' : 'No'}}</span>
-                                             <button class="plus player-toggle">
+                                             <button class="plus player-toggle" data-event="plus">
                                                  <i class="fa-solid fa-plus"></i>
                                              </button>
-                                             <button class="minus player-toggle ">
+                                             <button class="minus player-toggle d-none" data-event="minus">
                                                  <i class="fa-solid fa-minus"></i>
                                              </button>
                                          </td>
@@ -282,6 +282,60 @@
      </div>
  </section>
  <!-- Leagues Content Section End -->
+<!-- Modal failure -->
+<div class="alert-msg">
+    <div class="modal fade" id="errorModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="modal-failure-image modal-images-inner"></div>
+                </div>
+              <p id="cap-message">
+
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button class="modal-btn btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Ok</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Modal Failure</button> --}}
+    </div>
+    <!-- Modal Failure -->
+
+
+    <!-- Modal Success -->
+    <div class="alert-msg">
+        <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel1">Modal 1</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <div class="modal-success-image modal-images-inner"></div>
+                    </div>
+                  <p>
+                    You can add only 1-3 player.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button class="modal-btn btn btn-primary" data-bs-target="#exampleModalToggle1" data-bs-toggle="modal">Ok</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle1" data-bs-toggle="modal">Modal Success</button> --}}
+        </div>
+        <!-- Modal Success -->
 
  @endsection
 
@@ -291,8 +345,15 @@
  
 
          var myTeam = @json(Session::get('myTeam', []));
+         $(document).ready(function () {
 
-         $('.div-tbl tbody tr').each(function () {
+            autoCheck();
+
+
+                });
+         function autoCheck(){
+           
+            $('.tbody  tr').each(function () {
              var row = $(this);
              var leagueId = "{{$matchDetails[0]->league->league_id}}";
 
@@ -318,6 +379,8 @@
                  row.find('.minus').addClass('d-none');
              }
          });
+         }
+      
 
          $('.next-btn').click(function (e) {
              e.preventDefault();
