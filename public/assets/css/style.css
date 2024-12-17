@@ -3093,3 +3093,19 @@ td.player-name p {
 }
 
 /* Modal CSS Start */
+
+/* CSS Fixes */
+span.alert {
+    padding: 8px;
+    position: absolute;
+    top: -50px;
+    display: inline-block;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.alert-success{
+    background-color: #61d5b6;
+}
