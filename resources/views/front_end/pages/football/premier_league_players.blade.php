@@ -49,9 +49,9 @@
                      <h6>{{ $matchDetails[0]->home_team_name ?? '' }}</h6>
                  </div>
                  <div class="match-details">
-                 <h6>{{ $matchDetails[0]->venue_name ?? ''}}</h6>
-                  <p>{{ $matchDetails[0]->venue_city ?? ''}}</p>
-                  <span>{{ date('Y-m-d h:i:A',strtotime($matchDetails[0]->fixture_date ?? '')) }}</span>
+                     <h6>{{ $matchDetails[0]->venue_name ?? ''}}</h6>
+                     <p>{{ $matchDetails[0]->venue_city ?? ''}}</p>
+                     <span>{{ date('Y-m-d h:i:A',strtotime($matchDetails[0]->fixture_date ?? '')) }}</span>
                  </div>
                  <div class="team-logo">
                      <div class="team_inner">
@@ -85,17 +85,24 @@
                                      </tr>
                                  </thead>
                                  <tbody class="tbody">
-                                 @foreach ($organizedPlayers['Goalkeeper'] as $gk_player)
+                                     @foreach ($organizedPlayers['Goalkeeper'] as $gk_player)
 
-                                     <tr class="matche-main" data-team-id="{{$gk_player->player_team_id}}" data-player-id="{{$gk_player->player_id}}" data-player-role="G" data-player-name="{{$gk_player->name}}" data-team-logo="{{$gk_player->team_logo}}" data-match-id="{{$matchDetails[0]->fixture_id}}" data-team-name="testing" data-home-team="{{ $matchDetails[0]->home_team_id }}" data-away-team="{{ $matchDetails[0]->away_team_id }}" data-slug-matchid="{{ $matchDetails[0]->id }}">
+                                     <tr class="matche-main" data-team-id="{{$gk_player->player_team_id}}"
+                                         data-player-id="{{$gk_player->player_id}}" data-player-role="G"
+                                         data-player-name="{{$gk_player->name}}"
+                                         data-team-logo="{{$gk_player->team_logo}}"
+                                         data-match-id="{{$matchDetails[0]->fixture_id}}" data-team-name="testing"
+                                         data-home-team="{{ $matchDetails[0]->home_team_id }}"
+                                         data-away-team="{{ $matchDetails[0]->away_team_id }}"
+                                         data-slug-matchid="{{ $matchDetails[0]->id }}">
 
                                          <td class="player-name">
                                              <p>{{ $gk_player->name }}</p>
                                          </td>
                                          <td class="match-team-logo">
                                              <!-- <a href=""> -->
-                                                 <!-- <div class="match-team-logo-inner  match-team-logo-inner1"></div> -->
-                                                 <img src="{{$gk_player->team_logo}}" alt="team-logo-2">
+                                             <!-- <div class="match-team-logo-inner  match-team-logo-inner1"></div> -->
+                                             <img src="{{$gk_player->team_logo}}" alt="team-logo-2">
 
                                              <!-- </a> -->
                                          </td>
@@ -115,7 +122,7 @@
                                          </td>
                                      </tr>
                                      @endforeach
-                             
+
                                  </tbody>
                              </table>
                          </div>
@@ -136,15 +143,22 @@
                                      </tr>
                                  </thead>
                                  <tbody>
-                                 @foreach ($organizedPlayers['Defender'] as $def_player)
+                                     @foreach ($organizedPlayers['Defender'] as $def_player)
 
-                                     <tr class="matche-main" data-team-id="{{$def_player->player_team_id}}" data-player-id="{{$def_player->player_id}}" data-player-role="D" data-player-name="{{$def_player->name}}" data-team-logo="{{$def_player->team_logo}}" data-match-id="{{$matchDetails[0]->fixture_id}}" data-team-name="testing" data-home-team="{{ $matchDetails[0]->home_team_id }}" data-away-team="{{ $matchDetails[0]->away_team_id }}" data-slug-matchid="{{ $matchDetails[0]->id }}">
+                                     <tr class="matche-main" data-team-id="{{$def_player->player_team_id}}"
+                                         data-player-id="{{$def_player->player_id}}" data-player-role="D"
+                                         data-player-name="{{$def_player->name}}"
+                                         data-team-logo="{{$def_player->team_logo}}"
+                                         data-match-id="{{$matchDetails[0]->fixture_id}}" data-team-name="testing"
+                                         data-home-team="{{ $matchDetails[0]->home_team_id }}"
+                                         data-away-team="{{ $matchDetails[0]->away_team_id }}"
+                                         data-slug-matchid="{{ $matchDetails[0]->id }}">
 
                                          <td class="player-name">
                                              <p>{{ $def_player->name }}</p>
                                          </td>
                                          <td class="match-team-logo">
-                                         <img src="{{$def_player->team_logo}}" alt="team-logo-2">
+                                             <img src="{{$def_player->team_logo}}" alt="team-logo-2">
 
                                              <!-- <a href="">
                                                  <div class="match-team-logo-inner  match-team-logo-inner1"></div>
@@ -187,14 +201,21 @@
                                      </tr>
                                  </thead>
                                  <tbody>
-                                 @foreach ($organizedPlayers['Midfielder'] as $mid_player)
-                                     <tr class="matche-main" data-team-id="{{$mid_player->player_team_id}}" data-player-id="{{$mid_player->player_id}}" data-player-role="M" data-player-name="{{$mid_player->name}}" data-team-logo="{{$mid_player->team_logo}}" data-match-id="{{$matchDetails[0]->fixture_id}}" data-team-name="testing" data-home-team="{{ $matchDetails[0]->home_team_id }}" data-away-team="{{ $matchDetails[0]->away_team_id }}" data-slug-matchid="{{ $matchDetails[0]->id }}">
+                                     @foreach ($organizedPlayers['Midfielder'] as $mid_player)
+                                     <tr class="matche-main" data-team-id="{{$mid_player->player_team_id}}"
+                                         data-player-id="{{$mid_player->player_id}}" data-player-role="M"
+                                         data-player-name="{{$mid_player->name}}"
+                                         data-team-logo="{{$mid_player->team_logo}}"
+                                         data-match-id="{{$matchDetails[0]->fixture_id}}" data-team-name="testing"
+                                         data-home-team="{{ $matchDetails[0]->home_team_id }}"
+                                         data-away-team="{{ $matchDetails[0]->away_team_id }}"
+                                         data-slug-matchid="{{ $matchDetails[0]->id }}">
 
                                          <td class="player-name">
                                              <p>{{ $mid_player->name ?? '' }}</p>
                                          </td>
                                          <td class="match-team-logo">
-                                         <img src="{{$mid_player->team_logo ?? ''}}" alt="team-logo-2">
+                                             <img src="{{$mid_player->team_logo ?? ''}}" alt="team-logo-2">
 
                                              <!-- <a href="">
                                                  <div class="match-team-logo-inner  match-team-logo-inner1"></div>
@@ -216,7 +237,7 @@
                                          </td>
                                      </tr>
                                      @endforeach
-                          
+
                                  </tbody>
                              </table>
                          </div>
@@ -237,15 +258,22 @@
                                      </tr>
                                  </thead>
                                  <tbody>
-                                 @foreach ( $organizedPlayers['Attacker'] as $st_player)
+                                     @foreach ( $organizedPlayers['Attacker'] as $st_player)
 
-                                     <tr class="matche-main" data-team-id="{{$st_player->player_team_id}}" data-player-id="{{$st_player->player_id}}" data-player-role="F" data-player-name="{{$st_player->name}}" data-team-logo="{{$st_player->team_logo}}" data-match-id="{{$matchDetails[0]->fixture_id}}" data-team-name="testing" data-home-team="{{ $matchDetails[0]->home_team_id }}" data-away-team="{{ $matchDetails[0]->away_team_id }}" data-slug-matchid="{{ $matchDetails[0]->id }}">
+                                     <tr class="matche-main" data-team-id="{{$st_player->player_team_id}}"
+                                         data-player-id="{{$st_player->player_id}}" data-player-role="F"
+                                         data-player-name="{{$st_player->name}}"
+                                         data-team-logo="{{$st_player->team_logo}}"
+                                         data-match-id="{{$matchDetails[0]->fixture_id}}" data-team-name="testing"
+                                         data-home-team="{{ $matchDetails[0]->home_team_id }}"
+                                         data-away-team="{{ $matchDetails[0]->away_team_id }}"
+                                         data-slug-matchid="{{ $matchDetails[0]->id }}">
 
                                          <td class="player-name">
                                              <p>{{ $st_player->name }}</p>
                                          </td>
                                          <td class="match-team-logo">
-                                         <img src="{{$st_player->team_logo}}" alt="team-logo-2">
+                                             <img src="{{$st_player->team_logo}}" alt="team-logo-2">
 
                                              <!-- <a href="">
                                                  <div class="match-team-logo-inner  match-team-logo-inner1"></div>
@@ -267,7 +295,7 @@
                                          </td>
                                      </tr>
                                      @endforeach
-                           
+
                                  </tbody>
                              </table>
                          </div>
@@ -282,78 +310,82 @@
      </div>
  </section>
  <!-- Leagues Content Section End -->
-<!-- Modal failure -->
-<div class="alert-msg">
-    <div class="modal fade" id="errorModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-image">
-                    <div class="modal-failure-image modal-images-inner"></div>
-                </div>
-              <p id="cap-message">
+ <!-- Modal failure -->
+ <div class="alert-msg">
+     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+         tabindex="-1">
+         <div class="modal-dialog modal-dialog-centered">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                     <div class="modal-image">
+                         <div class="modal-failure-image modal-images-inner"></div>
+                     </div>
+                     <p id="error-message">
+                        
+                     </p>
+                 </div>
+                 <div class="modal-footer">
+                     <button class="modal-btn btn btn-primary" data-bs-target="#exampleModalToggle2"
+                         data-bs-toggle="modal">Ok</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+  
+ </div>
+ <!-- Modal Failure -->
 
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button class="modal-btn btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Ok</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      {{-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Modal Failure</button> --}}
-    </div>
-    <!-- Modal Failure -->
 
+ <!-- Modal Success -->
+ <div class="alert-msg">
+     <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1"
+         tabindex="-1">
+         <div class="modal-dialog modal-dialog-centered">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h1 class="modal-title fs-5" id="exampleModalToggleLabel1">Modal 1</h1>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                     <div class="modal-image">
+                         <div class="modal-success-image modal-images-inner"></div>
+                     </div>
+                     <p>
+                         You can add only 1-3 player.
+                     </p>
+                 </div>
+                 <div class="modal-footer">
+                     <button class="modal-btn btn btn-primary" data-bs-target="#exampleModalToggle1"
+                         data-bs-toggle="modal">Ok</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+   
+ </div>
+ <!-- Modal Success -->
 
-    <!-- Modal Success -->
-    <div class="alert-msg">
-        <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel1">Modal 1</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-image">
-                        <div class="modal-success-image modal-images-inner"></div>
-                    </div>
-                  <p>
-                    You can add only 1-3 player.
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <button class="modal-btn btn btn-primary" data-bs-target="#exampleModalToggle1" data-bs-toggle="modal">Ok</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          {{-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle1" data-bs-toggle="modal">Modal Success</button> --}}
-        </div>
-        <!-- Modal Success -->
 
  @endsection
 
  @section('custom-script')
 
  <script>
- 
+     var myTeam = @json(Session::get('myTeam', []));
+     $(document).ready(function () {
 
-         var myTeam = @json(Session::get('myTeam', []));
-         $(document).ready(function () {
-
-            autoCheck();
+         autoCheck();
 
 
-                });
-         function autoCheck(){
-           
-            $('.tbody  tr').each(function () {
+     });
+
+     function autoCheck() {
+
+         $('.tbody  tr').each(function () {
              var row = $(this);
              var leagueId = "{{$matchDetails[0]->league->league_id}}";
 
@@ -379,96 +411,92 @@
                  row.find('.minus').addClass('d-none');
              }
          });
-         }
-      
+     }
 
-         $('.next-btn').click(function (e) {
-             e.preventDefault();
 
-             var nextBtn = $(this);
+     $('.next-btn').click(function (e) {
+         e.preventDefault();
 
-             $.get("{{ route('current-team-count') }}", function (data, status) {
-                 if (data.success == true && data.count != 11) {
-                     $("#error-message").html('Your team must have exactly 11 players.');
-                     $("#errorModal2").modal('show');
-                     console.log('ddd');
-                 } else {
-                     console.log('testing');
-                     window.location.href = nextBtn.attr('href');
-                 }
-             });
-         });
+         var nextBtn = $(this);
 
-         $.ajaxSetup({
-             headers: {
-                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+         $.get("{{ route('current-team-count') }}", function (data, status) {
+             if (data.success == true && data.count != 11) {
+                 $("#error-message").html('Your team must have exactly 11 players.');
+                 $("#errorModal2").modal('show');
+                 console.log('ddd');
+             } else {
+                 console.log('testing');
+                 window.location.href = nextBtn.attr('href');
              }
          });
+     });
 
-         $(document).on('click', '.player-toggle', function () {
+     $.ajaxSetup({
+         headers: {
+             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+         }
+     });
 
-             var team_id = $(this).closest('tr').data('team-id');
-             var player_id = $(this).closest('tr').data('player-id');
-             var player_role = $(this).closest('tr').data('player-role');
-             var leagueId = "{{$matchDetails[0]->league->league_id}}";
-             var player_name = $(this).closest('tr').data('player-name');
-             var team_logo = $(this).closest('tr').data('team-logo');
-             var match_id = $(this).closest('tr').data('match-id');
-             var team_name = $(this).closest('tr').data('team-name');
-             var homeTeamId = $(this).closest('tr').data('home-team');
-             var awayTeamId = $(this).closest('tr').data('away-team');
-             var dbMatchId = $(this).closest('tr').data('slug-matchid');
+     $(document).on('click', '.player-toggle', function () {
 
-             var button = $(this); // Store reference to the clicked button
-             var isPlus = button.hasClass('plus'); // Check if the clicked button is a "plus" button
-             var event = $(this).data('event');
-             var formData = {
-                 team_id: team_id,
-                 player_id: player_id,
-                 player_role: player_role,
-                 leagueId: leagueId,
-                 player_name: player_name,
-                 event: event,
-                 team_logo: team_logo,
-                 match_id: match_id,
-                 team_name: team_name,
-                 homeTeamId: homeTeamId,
-                 awayTeamId: awayTeamId,
-                 dbMatchId: dbMatchId,
-             };
+         var team_id = $(this).closest('tr').data('team-id');
+         var player_id = $(this).closest('tr').data('player-id');
+         var player_role = $(this).closest('tr').data('player-role');
+         var leagueId = "{{$matchDetails[0]->league->league_id}}";
+         var player_name = $(this).closest('tr').data('player-name');
+         var team_logo = $(this).closest('tr').data('team-logo');
+         var match_id = $(this).closest('tr').data('match-id');
+         var team_name = $(this).closest('tr').data('team-name');
+         var homeTeamId = $(this).closest('tr').data('home-team');
+         var awayTeamId = $(this).closest('tr').data('away-team');
+         var dbMatchId = $(this).closest('tr').data('slug-matchid');
 
-             $.ajax({
-                 url: "{{ route('create-team') }}",
-                 type: 'POST',
-                 data: formData,
-                 success: function (response) {
-                    console.log(response);
-                     if (response.success == true) {
-                         if (isPlus) {
-                             button.addClass('d-none');
-                             button.closest('td').find('.minus').removeClass('d-none');
-                             button.parent('td').parent('tr').addClass('select-player');
-                         } else {
-                             button.addClass('d-none');
-                             button.closest('td').find('.plus').removeClass('d-none');
-                             button.parent('td').parent('tr').removeClass('select-player');
+         var button = $(this); // Store reference to the clicked button
+         var isPlus = button.hasClass('plus'); // Check if the clicked button is a "plus" button
+         var event = $(this).data('event');
+         var formData = {
+             team_id: team_id,
+             player_id: player_id,
+             player_role: player_role,
+             leagueId: leagueId,
+             player_name: player_name,
+             event: event,
+             team_logo: team_logo,
+             match_id: match_id,
+             team_name: team_name,
+             homeTeamId: homeTeamId,
+             awayTeamId: awayTeamId,
+             dbMatchId: dbMatchId,
+         };
 
-                         }
+         $.ajax({
+             url: "{{ route('create-team') }}",
+             type: 'POST',
+             data: formData,
+             success: function (response) {
+                 console.log(response);
+                 if (response.success == true) {
+                     if (isPlus) {
+                         button.addClass('d-none');
+                         button.closest('td').find('.minus').removeClass('d-none');
+                         button.parent('td').parent('tr').addClass('select-player');
                      } else {
-                         $("#error-message").html(response.message);
-                         $("#errorModal2").modal('show');
+                         button.addClass('d-none');
+                         button.closest('td').find('.plus').removeClass('d-none');
+                         button.parent('td').parent('tr').removeClass('select-player');
 
                      }
-                 },
-                 error: function (xhr, status, error) {
-                     console.error('Error:', error);
+                 } else {
+                     $("#error-message").html(response.message);
+                     $("#exampleModalToggle").modal('show');
+
                  }
-             });
+             },
+             error: function (xhr, status, error) {
+                 console.error('Error:', error);
+             }
          });
-
-
-
-    
+     });
 
  </script>
 
