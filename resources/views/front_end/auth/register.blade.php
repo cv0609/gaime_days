@@ -18,7 +18,7 @@
                         @enderror
                     </fieldset>
                     <fieldset>
-                        <input name="user_name" value="{{ old('user_name') }}" placeholder="Choose Username" type="text" tabindex="2"  autofocus>
+                        <input name="user_name" value="{{ old('user_name') }}" placeholder="Enter Username" type="text" tabindex="2"  autofocus>
                         @error('user_name')
                         <span class="text-danger">{{ $message }}</span>
                         @enderror
@@ -36,7 +36,7 @@
                         @enderror
                     </fieldset>
                     <fieldset>
-                        <input name="password" placeholder="Choose Password" type="password" tabindex="5" id="password-field">
+                        <input name="password" placeholder="Enter Password" type="password" tabindex="5" id="password-field">
                        @error('password')
                         <span class="text-danger">{{ $message }}</span>
                         @enderror

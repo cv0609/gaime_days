@@ -391,7 +391,6 @@ img {
     background-repeat: no-repeat;
     position: relative;
     margin: 20px;
-    border-radius: 50px;
 }
 
 .home_banner::before {
@@ -401,7 +400,6 @@ img {
     width: 100%;
     height: 100%;
     z-index: 0;
-    border-radius: 50px;
 }
 
 .banner_box {
@@ -437,6 +435,10 @@ img {
 
 }
 
+.our_leagues h2 {
+    color: #fff;
+}
+
 .image_side {
     width: 50%;
 }
@@ -445,24 +447,24 @@ img {
     background-position: center;
     background-size: cover !important;
     background: url(../images/homeone.jpg);
-    height: 400px;
-    border-radius: 10px;
+    height: 410px;
+    border-radius: 20px;
 }
 
 .image_side.two {
     background-position: center;
     background-size: cover !important;
     background: url(../images/hometwo.jpg);
-    height: 400px;
-    border-radius: 10px;
+    height: 410px;
+    border-radius: 20px;
 }
 
 .image_side.three {
     background-position: center;
     background-size: cover !important;
     background: url(../images/homethree.jpg);
-    height: 400px;
-    border-radius: 10px;
+    height: 410px;
+    border-radius: 20px;
 }
 
 .text_side {
@@ -692,9 +694,14 @@ section.our_leagues {
 
 /* Footer CSS End*/
 /* disclamir styling start */
-section.discalimer {
-    padding: 60px 0;
+.soccer-disclaimer {
     text-align: center;
+    padding: 60px 0;
+    box-shadow: #fff 0px 8px 24px;
+}
+
+.soccer-disclaimer h3 {
+    margin-bottom: 20px;
 }
 
 .dis_text p {
@@ -1133,7 +1140,7 @@ section.choose_us {
 }
 
 section.our_about {
-    padding: 60px 0;
+    padding: 60px 0 0 0;
 }
 
 .column p strong {
@@ -1160,6 +1167,7 @@ section.our_about {
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
+    display: none;
 }
 
 /* about styling end */
@@ -1236,7 +1244,7 @@ section.gaime_sec h2 {
 
 .step-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
@@ -1260,6 +1268,7 @@ section.gaime_sec h2 {
 
 .how_play_image2 {
     background-image: url("../images/how_play_img2.jpg");
+    height: 450px;
 }
 
 .how_play_image3 {
@@ -1269,6 +1278,7 @@ section.gaime_sec h2 {
 .how_play_image4 {
     background-image: url("../images/how_play_img4.jpg");
     background-size: cover;
+    height: 580px;
 }
 
 .how_play_image5 {
@@ -1301,12 +1311,34 @@ section.gaime_sec h2 {
     padding: 0 20px;
 }
 
+.playing_guide_content_section ul ,.inner-ul{
+    margin: 10px 0;
+}
+
+.playing_guide_content_section ul li {
+    position: relative;
+}
+.inner-ul li{
+ margin-left: 20px;
+}
+
+.playing_guide_content_section ul li:before ,.inner-ul li:before {
+    content: "•";
+    color: #61d5b6;
+    position: absolute;
+    left: -20px;
+    top: -2px;
+    font-size: 22px;
+}
+
+ 
 .step h2 {
     font-size: 28px;
     margin-bottom: 20px;
     color: #61d5b6;
     line-height: 1.2;
 }
+
 
 h3 {
     font-size: 22px;
@@ -1316,15 +1348,14 @@ h3 {
 }
 
 .step p {
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
-
-
 .cta {
-    background-color: #0cdca8;
-    color: #fff;
-    text-align: center;
+    background-color: #fff;
+    color: #000;
     padding: 40px 20px;
     border-radius: 10px;
     margin-top: 50px;
@@ -1341,7 +1372,17 @@ h3 {
     margin-bottom: 20px;
     color: #000;
 }
-
+.cta p:last-child{
+margin-bottom: 0;
+}
+section.cta h3 {
+       color: #3b3b3b;
+}
+.how_play_bottom h3 {
+    color: #0cdca8;
+    font-size: 30px;
+    margin: 50px 0;
+}
 /* How To Play Page CSS End */
 
 /* Login Signup Form Pages CSS Start */

@@ -34,7 +34,7 @@
                         </li>
                     </ul>
                 </div>
-                <!-- <div class="footer-blocks footer-socials">
+                 <div class="footer-blocks footer-socials">
                     <h3>
                         Social Tags
                     </h3>
@@ -50,7 +50,7 @@
                             </div>
                         </a>
                     </div>
-                </div> -->
+                </div>
             </div>
             <div class="footer-copyright-ssl-wrap">
                 <div class="copyright-wrap">

@@ -299,7 +299,7 @@
         flex-direction: column-reverse;
     }
 
-    .playing_guide_content_section .container .step:nth-child(even) .step-content .how_play_image {
+    .playing_guide_content_section .container .step .step-content .how_play_image {
         margin-bottom: 30px;
     }
     .profile-side ,.col-sec{
@@ -311,6 +311,9 @@
     }
     .user-content-update {
         padding: 0 30px;
+    }
+    .playing_guide_content_section ul, .inner-ul {
+        margin: 10px 20px;
     }
 }
 
