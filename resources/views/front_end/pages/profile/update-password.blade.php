@@ -26,7 +26,7 @@
     <div class="container">
         <div class="mmy-profile-inner">
         @if(Session::has('success'))
-                    <span class="alert alert-success col-md-12 text-center">{{ Session::get('success')  }}</span>
+                    <span class="alert alert-success text-center">{{ Session::get('success')  }}</span>
                     @endif
                     @include('front_end.pages.profile.profile-sidebar')
             <div class="col-sec">

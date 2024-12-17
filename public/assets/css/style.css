@@ -438,6 +438,13 @@ img {
 .our_leagues h2 {
     color: #fff;
 }
+.text_side span {
+    color: #000;
+    font-weight: 500;
+}
+.text_side p {
+    color: #000;
+}
 
 .image_side {
     width: 50%;
@@ -484,10 +491,14 @@ img {
     gap: 50px;
     margin-bottom: 50px;
 }
+.both_into:nth-child(2){
+    flex-direction: row-reverse;
+}
 
 .text_side ul li {
     list-style: disc;
     margin-left: 20px;
+    color: #000;
 }
 
 section.our_leagues {
@@ -502,6 +513,7 @@ section.our_leagues {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 0 20px;
+    margin-bottom: 60px;
 }
 
 .features-section .container {
@@ -744,9 +756,13 @@ section.our_leagues {
     line-height: 1.4;
     letter-spacing: unset;
 }
-
+section.info_priterm-content-section b {
+    font-size: 17px;
+    font-weight: 600;
+}
 .info_priterm-content-grp strong {
     color: #61d5b6;
+    font-weight: 600;
 }
 
 .info_priterm-content-grp p {
@@ -1042,6 +1058,7 @@ fieldset:last-child {
 
 .header-pages-cards p a {
     color: #9cc3b8;
+font-weight: 600;
 }
 
 .header-pages-cards ul {
@@ -1057,13 +1074,13 @@ fieldset:last-child {
     content: "•";
     color: #55ba9f;
     position: absolute;
-    left: -20px;
-    top: 3.5px;
+    left: -15px;
+    top: 0;
     font-size: 16px;
 }
 
 section.get_touch {
-    padding: 60px 0;
+    padding: 0 0 60px 0;
     text-align: center;
 }
 
@@ -1078,14 +1095,23 @@ section.get_touch {
 }
 
 section.choose_us {
-    padding: 60px 0;
+    padding:0 0 60px 0;
     text-align: center;
 }
 
 .chose_text {
-    background: #ffffff8c;
+    background: #ffffff30;
     padding: 60px 0;
     border-radius: 20px;
+}
+.chat-butn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: red;
+    display: inline-block;
 }
 
 .chose_text p b {
@@ -1138,6 +1164,11 @@ section.choose_us {
     font-weight: 500;
     margin-bottom: 20px;
 }
+.about_head p {
+    font-size: 22px;
+    font-weight: 600;
+}
+
 
 section.our_about {
     padding: 60px 0 0 0;
@@ -1340,7 +1371,7 @@ section.gaime_sec h2 {
 }
 
 
-h3 {
+.step h3 {
     font-size: 22px;
     color: #fff;
     margin-top: 15px;
@@ -1372,11 +1403,10 @@ h3 {
     margin-bottom: 20px;
     color: #000;
 }
-.cta p:last-child{
-margin-bottom: 0;
-}
+
 section.cta h3 {
-       color: #3b3b3b;
+    color: #3b3b3b;
+    margin-bottom: 10px;
 }
 .how_play_bottom h3 {
     color: #0cdca8;
@@ -2280,6 +2310,7 @@ table tr td a::before {
 
 table tr {
     position: relative;
+    cursor: pointer;
 }
 
 .tab-content {
@@ -2299,7 +2330,7 @@ table tr {
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .matche-det table {
@@ -2351,6 +2382,9 @@ td.my-team-vice-captain {
     height: 25px;
     line-height: 1;
     right: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .credits_points button.minus {
@@ -2366,7 +2400,7 @@ td.my-team-vice-captain {
 
 .credits_points button.plus i {
     color: #00c900;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -2423,10 +2457,6 @@ td.match-team-logo a {
 .profile-image {
     width: 40px;
     height: 40px;
-    background-image: url(../images/user.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 50%;
 }
 
@@ -2605,6 +2635,11 @@ div#mySidenavs {
     border-radius: 50%;
     border: 3px solid #61d5b6;
     overflow: hidden;
+}
+.update_img_user_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .edit_pan svg {
@@ -3105,7 +3140,18 @@ span.alert {
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
+    font-size: 14px;
 }
 .alert-success{
     background-color: #61d5b6;
 }
+span.text-danger {
+    margin-top: 10px;
+    display: inline-block;
+}
+.leagues .league-logo img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+

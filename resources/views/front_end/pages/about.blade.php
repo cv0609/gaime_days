@@ -131,7 +131,7 @@
   <!-- gaime section end -->
   <!-- Home About Us Section End -->
   <!-- disclamar section start -->
-  <section class="discalimer">
+  <div class="discalimer">
       <div class="container">
           <div class="row">
               <div class="col-12">
@@ -151,5 +151,5 @@
               </div>
           </div>
       </div>
-  </section>
+</div>
   @endsection

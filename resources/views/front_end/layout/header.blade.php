@@ -30,7 +30,6 @@
                                 <a href="#">
                                     <div class="profile-image">
                                     <img src="{{(!empty(Auth::user()->image)) ? asset(Auth::user()->image) : asset('assets/images/dummy.jpg') }}" alt="dp">
-
                                     </div>
                                     <span>{{ ucfirst(Auth::user()->first_name) }}</span>
                                 </a>
