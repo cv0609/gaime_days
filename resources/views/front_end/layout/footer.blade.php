@@ -39,13 +39,13 @@
                         Social Tags
                     </h3>
                     <div class="social-tags-container">
-                        <a src="https://www.facebook.com/" target="__blank" class="social-icons social-fb">
+                        <a href="https://www.facebook.com/" target="__blank" class="social-icons social-fb">
                             <div class="social-ikons fb"></div>
                         </a>
-                        <a src="https://x.com" target="__blank" class="social-icons social-twitter">
+                        <a href="https://x.com" target="__blank" class="social-icons social-twitter">
                             <div class="social-ikons twitter"></div>
                         </a>
-                        <a src="https://www.instagram.com" target="__blank" class="social-icons social-insta">
+                        <a href="https://www.instagram.com" target="__blank" class="social-icons social-insta">
                             <div class="social-ikons insta">
                             </div>
                         </a>
