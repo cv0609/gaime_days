@@ -1,5 +1,5 @@
 @extends('front_end.layout.main')
-@section('title') Home-Page  @endsection
+@section('title') Homepage  @endsection
 @section('content')
 <!-- Home Page Banner Section Start -->
 <div class="home_banner">

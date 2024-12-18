@@ -283,7 +283,7 @@ img {
     color: #61d5b6;
 }
 
-.navbar-menu ul li a.active-link {
+.navbar-menu ul li a.active {
     color: #61d5b6;
 }
 
@@ -302,7 +302,7 @@ img {
     transition: all 0.3s ease-out;
 }
 
-.navbar-menu ul li a.active-link::after {
+.navbar-menu ul li a.active::after {
     transform: scaleX(0.9);
     background: #61d5b6;
     transform-origin: center;
@@ -3156,3 +3156,23 @@ span.text-danger {
     object-fit: cover;
 }
 
+.contact_float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    border: 3px solid #61d5b6;
+    border-radius: 8px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+
+.contact_float a i {
+color: #61d5b6;
+font-size: 30px;
+}

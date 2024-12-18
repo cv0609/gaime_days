@@ -2,7 +2,11 @@
   @section('title') Contact-Us  @endsection
   @section('content')
 
-
+<div class="contact_float">
+    <a class="contact_float_icon">
+    <i class="fa-solid fa-headset"></i>
+    </a>
+</div>
  <!--Contact Us Banner Section Start -->
  <div class="home_banner contact_us">
      <div class="container">
