@@ -1571,7 +1571,6 @@ fieldset {
     z-index: 1;
     position: relative;
     margin: 20px;
-    border-radius: 50px;
 }
 
 .leagues-pages::after {
@@ -1583,7 +1582,6 @@ fieldset {
     height: 100%;
     width: 100%;
     z-index: -1;
-    border-radius: 50px;
 }
 
 .banner-content {
