@@ -11,7 +11,7 @@
 
                 <div class="navbar-menu">
                     <ul>
-                        <li><a href="{{ route('home') }}" class="{{ Route::is('home') ? 'active' : '' }}">Homepage</a></li>
+                        <li><a href="{{ route('home') }}" class="{{ Route::is('home') ? 'active' : '' }}">Home</a></li>
                         <li><a href="{{ route('how.to.play') }}" class="{{ Route::is('how.to.play') ? 'active' : '' }}">Playing Guide</a></li>
                         <li><a href="{{ route('leagues') }}" class="{{ Route::is('leagues') ? 'active' : '' }}">Play now</a></li>
                         <li><a href="{{ route('about.us') }}" class="{{ Route::is('about.us') ? 'active' : '' }}">About Us</a></li>
