@@ -50,6 +50,10 @@
         height: 20px;
         width: 20px;
     }
+    .avatar-content {
+        justify-content: center;
+        margin-top: 15px;
+    }
 
     .signup-btn,
     .login-btn {
@@ -107,7 +111,7 @@
     }
 
     .both_into {
-        gap: 20px;
+        gap: 40px;
         flex-wrap: wrap;
     }
 
@@ -315,6 +319,12 @@
     .playing_guide_content_section ul, .inner-ul {
         margin: 10px 20px;
     }
+    section.our_leagues {
+        padding: 45px 0;
+    }
+    .our_leagues  .row .col-12 .both_into:last-child {
+        margin-bottom: 0;
+    }
 }
 
 
@@ -483,6 +493,27 @@
     .step p {
         font-size: 15px;
     }
+    section.our_about {
+        padding: 30px 0 0 0;
+    }
+    .about_head {
+        margin-bottom: 0;
+    }
+    .content {
+        gap: 0;
+    }
+    .column:first-child {
+        padding: 25px 10px;
+    }
+    .column {
+        padding: 25px 10px;
+    }
+    section.gaime_sec {
+        padding: 40px 0;
+    }
+    .contact-page-form-section {
+        margin: 50px 0 10px 0;
+    }
 }
 
 
@@ -559,6 +590,9 @@
 
     .sub-banner {
         height: 300px;
+    }
+    .about_head p {
+        font-size: 19px;
     }
 
     .how_to_play_wrap h2 {

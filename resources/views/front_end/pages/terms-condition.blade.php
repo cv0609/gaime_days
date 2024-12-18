@@ -78,7 +78,7 @@
                               login credentials and for all activities under your account.
                           </li>
                           <li>
-                              <b>Prohibited Activities::</b>We may disclose your information if required to do so by
+                              <b>Prohibited Activities:</b>We may disclose your information if required to do so by
                               law,
                               regulation, or legal process, such as in response to a court order or government
                               inquiry.
@@ -230,7 +230,7 @@
                       <ul>
                           <li><b> Informal Resolution:</b>If you have a dispute with us, we encourage you to contact
                               us
-                              at info@gaimedays.com to resolve the issue informally</li>
+                              at info@gaimedays.com to resolve the issue informally.</li>
                           <li><b>Governing Law:</b>These Terms are governed by and construed in accordance with
                               the laws of [Insert Jurisdiction].
                           </li>

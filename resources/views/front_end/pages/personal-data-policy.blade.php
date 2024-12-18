@@ -53,17 +53,17 @@
                     2. Data We Collect</h3>
                 <p>
                     We collect the following types of personal data to provide you with our services:</p>
-                <p><strong>A. Information You Provide to Us</strong></p>
+                <p><strong>a. Information You Provide to Us</strong></p>
                 <ul>
                     <li>
-                        <b>Account Information:<b> When you create an account with us, we collect personal
+                        <b>Account Information:</b> When you create an account with us, we collect personal
                                 details such as your name, email address, username, password, and any other
                                 information you provide during registration or in your account settings.
                     </li>
                     <li>
                         <b>Payment Information:</b> If you make a purchase or subscribe to our services, we may
                         collect payment details (e.g., credit/debit card information or PayPal account details),
-                        processed securely by our payment service provider
+                        processed securely by our payment service provider.
                     </li>
                     <li>
                         <b>Profile Information:</b> Team names, league preferences, and optional profile details
@@ -74,7 +74,7 @@
                         submitting inquiries.
                     </li>
                 </ul>
-                <p><strong>B. Automatically Collected Data</strong></p>
+                <p><strong>b. Automatically Collected Data</strong></p>
                 <ul>
                     <li>
                         <b>Usage Data:<b> Information about how you interact with our platform, including pages
@@ -209,7 +209,7 @@
                             <strong>
                                 Data Portability:
                             </strong>
-                            Request your data in a portable, machine-readable format
+                            Request your data in a portable, machine-readable format.
                         </p>
                     </li>
                     <li>

@@ -44,11 +44,11 @@
                       We may collect and process the following types of personal information:
                   </p>
                   <p>
-                      <strong> A. Information You Provide to Us</strong>
+                      <strong> a. Information You Provide to Us</strong>
                   </p>
                   <ul>
                       <li>
-                          <b>Account Information:<b>: When you create an account with us, we collect personal
+                          <b>Account Information:</b> When you create an account with us, we collect personal
                                   details such as your name, email address, username, password, and any other
                                   information you provide during registration or in your account settings.
                       </li>
@@ -65,7 +65,7 @@
                   </ul>
                   <p>
                       <strong>
-                          B. Information We Automatically Collect
+                          b. Information We Automatically Collect
                       </strong>
                   </p>
                   <ul>
@@ -116,7 +116,7 @@
                           <b>Improving Our Platform:</b>To analyze user behavior, improve website functionality, fix
                           bugs, and optimize the platform’s features and performance.
                       </li>
-                      <li><b>Security and Legal Compliance</b>To protect our services, investigate potential fraud,
+                      <li><b>Security and Legal Compliance:</b>To protect our services, investigate potential fraud,
                           prevent illegal activities, and comply with applicable laws and regulations.</li>
                   </ul>
               </div>
@@ -195,7 +195,7 @@
                           circumstances.
                       </li>
                       <li><b>Data Portability:</b> You can request a copy of your personal data in a
-                          machine-readable format</li>
+                          machine-readable format.</li>
                   </ul>
                   <p>To exercise these rights, please contact us using the details provided below. We will respond
                       to your request in accordance with applicable laws.
@@ -262,9 +262,16 @@
               </div>
               <div class="info_priterm-content-grp">
                   <h3>Contact Us</h3>
-                  <p>If you have any questions or concerns about this Privacy Policy or our privacy practices,
-                      please contact us at:</p>
-                  <a href="mailto:info@gaimedays.com">info@gaimedays.com</a>
+                  <p>
+                    If you have any questions or concerns about this Privacy Policy or our privacy practices,
+                      please contact us at:
+                    </p>
+                    <p>
+                    <b>
+                          Email
+                      </b>
+                      <a href="mailto:info@gaimedays.com">info@gaimedays.com</a>
+                      </p>                 
                   </p>
               </div>
           </div>

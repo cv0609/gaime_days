@@ -1,5 +1,7 @@
  @extends('front_end.layout.main')
  @section('content')
+
+
  <!--Contact Us Banner Section Start -->
  <div class="home_banner contact_us">
      <div class="container">
@@ -18,10 +20,7 @@
  <!-- After Banner Text Start -->
  <div class="true_banner-text pt-5">
      <div class="container">
-         <div class="true_banner-text-wrap">
-             <h4 class="text-center">
-                 Contact Us
-             </h4>
+         <div class="true_banner-text-wrap">            
              <p>
                  We’re here to help with any questions or concerns you have about your Fantasy Football
                  experience. Whether you need assistance with your Fantasy Soccer team, account setup,
@@ -63,12 +62,16 @@
                      <strong>
                          Live Chat:
                      </strong>
-                     Available 24/7
+                     Available 24/7 (click the chat icon in the bottom right corner of the page)
                  </p>
                  <p>
                      <strong>
                          Frequently Asked Questions
                      </strong>
+                 </p>
+                 <p>
+                 Before contacting us, check out our <strong>FAQs</strong>  page for quick answers to common questions
+                 about <strong>Fantasy Football</strong> , league setup, scoring systems, and more.
                  </p>
                  <p><a href="#">Visit Our FAQ Page</a></p>
 
@@ -83,7 +86,7 @@
                      <li><b>Sunday:</b> Closed</li>
                  </ul>
                  <p>If you contact us outside of these hours, we’ll respond as soon as possible during the next
-                     business day
+                     business day.
                  </p>
                  <p><strong>Social Media</strong></p>
                  <p>Stay connected and up-to-date with all things Fantasy Sports! Follow us on social media for
@@ -102,6 +105,11 @@
                      <li>
                          <p>
                              <a href="https://www.instagram.com/">Instagram</a>
+                         </p>
+                     </li>
+                     <li>
+                         <p>
+                             <a href="https://www.youtube.com/">YouTube</a>
                          </p>
                      </li>
                  </ul>
@@ -166,14 +174,14 @@
                                                  <option value="Billing & Payments">Billing & Payments</option>
                                                  <option value="Feedback/Suggestions">Feedback/Suggestions</option>
                                                  <option value="other">Other</option>
-                                             <p class="text-danger d-none" id="subjectError"></p>
+                                                  <p class="text-danger d-none" id="subjectError"></p>
 
                                              </select>
                                          </fieldset>
                                          <fieldset>
                                              <textarea name="message" class="message" placeholder="Your Message..."
                                              id="message" minlength="10" maxlength="1000">{{ old('message') }}</textarea>
-                                    <p class="text-danger d-none" id="messageError"></p>
+                                               <p class="text-danger d-none" id="messageError"></p>
 
                                          </fieldset>
                                          <fieldset>
@@ -234,6 +242,8 @@
      </div>
  </section>
  <!-- get in touch section end -->
+
+
  @endsection
 
  @section('custom-script')
