@@ -329,6 +329,10 @@
     .our_leagues  .row .col-12 .both_into:last-child {
         margin-bottom: 0;
     }
+    .home-banner-button {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
 }
 
 

@@ -330,7 +330,24 @@ img {
     background-color: #fff;
     box-shadow: #61d5b6 0px 3px 8px;
 }
-
+.home-banner-button {
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    display: inline-block;
+    background-color: #61d5b6;
+    color: #000 !important;
+    margin-left: 10px;
+    transition: 0.4s all ease-in-out;
+    border-radius: 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+}
+.home-banner-button:hover{
+    background-color: #fff;
+    box-shadow: #61d5b6 0px 3px 8px;   
+}
 .signup-btn {
     margin-left: 15px;
 }
