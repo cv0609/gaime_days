@@ -602,6 +602,7 @@ section.our_leagues {
     color: #fff;
     transition: 0.4s all ease-in-out;
     font-family: "Work Sans", sans-serif;
+    font-weight: 400;
 }
 
 .footer-blocks ul li a:hover {
@@ -693,6 +694,7 @@ section.our_leagues {
     font-size: 14px;
     font-family: "Work Sans", sans-serif;
     color: #fff;
+    font-weight: 400;
 }
 
 .ssl-container {
