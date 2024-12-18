@@ -1,4 +1,5 @@
 @extends('front_end.layout.main')
+@section('title') Match-Details  @endsection
 @section('content')
 
 @php

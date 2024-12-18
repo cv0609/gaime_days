@@ -1,5 +1,6 @@
   @extends('front_end.layout.main')
-  @section('content')
+@section('title') Terms-Condition  @endsection
+@section('content')
   <!--Contact Us Banner Section Start -->
   <div class="home_banner terms_conditions">
       <div class="container">

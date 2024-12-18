@@ -1,4 +1,5 @@
 @extends('front_end.layout.main')
+@section('title') My-Matches  @endsection
 @section('content')
 
 <!--==== Matches section start ====-->

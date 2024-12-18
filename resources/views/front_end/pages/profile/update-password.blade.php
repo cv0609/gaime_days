@@ -1,4 +1,5 @@
 @extends('front_end.layout.main')
+@section('title') Update-Password  @endsection
 @section('content')
 <!--Leagues Pages Banner Section Start -->
 <section class="pages-banner leagues-pages  bg-cover bg-no-repeat">

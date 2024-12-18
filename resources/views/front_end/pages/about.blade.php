@@ -1,4 +1,5 @@
   @extends('front_end.layout.main')
+  @section('title') About-Us  @endsection
   @section('content')
   <!-- Home Page Banner Section Start -->
   <div class="home_banner about_us">

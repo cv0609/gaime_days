@@ -1,4 +1,5 @@
 @extends('front_end.layout.main')
+@section('title') How-To-Play  @endsection
 @section('content')
 <!--Playing Guide  Banner Section Start -->
 <div class="home_banner how_to_play">

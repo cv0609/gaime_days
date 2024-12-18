@@ -1,5 +1,6 @@
   @extends('front_end.layout.main')
-  @section('content')
+@section('title') Privacy-Policy  @endsection
+@section('content')
   <!--Contact Us Banner Section Start -->
   <div class="home_banner privacy_policy">
       <div class="container">
