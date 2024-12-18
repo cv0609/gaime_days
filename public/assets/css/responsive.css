@@ -54,6 +54,10 @@
         justify-content: center;
         margin-top: 15px;
     }
+    .avatar .dropdown {
+        position: static;
+        margin: 10px auto;
+    }
 
     .signup-btn,
     .login-btn {
