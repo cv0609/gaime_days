@@ -9,6 +9,7 @@
                 <div class="banner_box">
                     <h1>Gaime Days</h1>
                     <p>The New Home Of Fantasy Football</p>
+                    <a href="" class="home-banner-button">Play Now</a>
                 </div>
             </div>
         </div>
