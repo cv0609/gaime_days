@@ -1,5 +1,6 @@
  @extends('front_end.layout.main')
- @section('content')
+  @section('title') Contact-Us  @endsection
+  @section('content')
 
 
  <!--Contact Us Banner Section Start -->
